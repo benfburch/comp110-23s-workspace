@@ -1,4 +1,4 @@
-"""chardle program"""
+"""chardle program."""
 
 __author__ = "730563626"
 
@@ -10,7 +10,7 @@ if (len(word_target) != 5):
     exit()
 
 
-letter_target: chr = input("Enter a single character: ")
+letter_target: str = input("Enter a single character: ")
 
 if (len(letter_target) != 1):
     print("Error: Character must be a single character.")
@@ -18,14 +18,13 @@ if (len(letter_target) != 1):
 
 instance: int = 0 
 
-
 print("Searching for " + (letter_target) + " in " + (word_target))
 
 
 if (word_target[0] == letter_target):
     print(letter_target + " found at index 0")
     instance = (instance) + 1
-
+ 
 if (word_target[1] == letter_target):
     print(letter_target + " found at index 1")
     instance = (instance) + 1
